@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Конструктор дронов для вашего магазина</title>
+  <meta name="description" content="Покупатель собирает дрон из вашего каталога, конструктор не даёт собрать то, что не полетит, и кладёт готовый комплект в корзину. Живое демо." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%279%27 fill=%27%23025aff%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%275%27 fill=%27none%27 stroke=%27%23fff%27 stroke-width=%272.5%27/%3E%3Cpath d=%27M16 4v7M16 21v7M4 16h7M21 16h7%27 stroke=%27%23fff%27 stroke-width=%272.5%27 stroke-linecap=%27round%27/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+<div class="page">
+
+  <header class="bar">
+    <a class="brand" href="#top">Конструктор дронов</a>
+    <nav class="bar-links" aria-label="Разделы">
+      <a href="#demo">Демо</a>
+      <a href="#value">Магазину</a>
+      <a href="#checks">Проверки</a>
+      <a href="#cabinet">Кабинет</a>
+      <a href="#embed">Встраивание</a>
+    </nav>
+    <div class="bar-actions">
+      <a class="icon-btn" href="https://t.me/domuskh" target="_blank" rel="noopener" aria-label="Telegram менеджера">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#2AABEE" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"/><path fill="#fff" d="m6.6 11.6 8.8-3.6c.4-.2.8.1.7.7l-1.5 7c-.1.5-.4.6-.8.4l-2.3-1.7-1.1 1.1c-.1.1-.2.2-.5.2l.2-2.3 4.2-3.8c.2-.2 0-.3-.3-.1l-5.2 3.3-2.2-.7c-.5-.2-.5-.5.1-.7Z"/></svg>
+      </a>
+      <a class="btn btn-outline" href="https://t.me/domuskh" target="_blank" rel="noopener">Написать нам</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="card hero">
+      <div class="hero-text">
+        <p class="eyebrow">Для магазинов FPV и БПЛА-комплектующих</p>
+        <h1>Конструктор дронов <span class="blue">для вашего магазина</span></h1>
+        <p class="lede">Покупатель собирает дрон из вашего каталога. Конструктор не даёт собрать то, что не полетит, подсказывает, чего не хватает, и кладёт готовый комплект в корзину вашего сайта.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#demo">Попробовать демо</a>
+          <a class="btn btn-soft" href="https://t.me/domuskh" target="_blank" rel="noopener">Обсудить внедрение</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 320" class="quad">
+          <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#025aff"/><stop offset="1" stop-color="#3878f0"/></linearGradient></defs>
+          <g stroke="#e4e4e4" stroke-width="2" fill="#fff">
+            <rect x="150" y="120" width="120" height="80" rx="18"/>
+            <line x1="150" y1="130" x2="70" y2="70"/><line x1="270" y1="130" x2="350" y2="70"/><line x1="150" y1="190" x2="70" y2="250"/><line x1="270" y1="190" x2="350" y2="250"/>
+          </g>
+          <g fill="url(#g)"><circle cx="70" cy="70" r="30"/><circle cx="350" cy="70" r="30"/><circle cx="70" cy="250" r="30"/><circle cx="350" cy="250" r="30"/></g>
+          <g fill="#fff" opacity=".9"><rect x="40" y="66" width="60" height="8" rx="4"/><rect x="320" y="66" width="60" height="8" rx="4"/><rect x="40" y="246" width="60" height="8" rx="4"/><rect x="320" y="246" width="60" height="8" rx="4"/></g>
+          <g fill="#242b39"><rect x="168" y="138" width="84" height="10" rx="5"/><rect x="168" y="156" width="56" height="10" rx="5" fill="#025aff"/><rect x="168" y="174" width="70" height="10" rx="5" fill="#e4e4e4"/></g>
+          <g class="check"><circle cx="300" cy="190" r="22" fill="#27D061"/><path d="m290 190 7 7 13-14" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+        </svg>
+      </div>
+    </section>
+
+    <section id="demo" class="card">
+      <div class="sec-head">
+        <h2>Живое демо</h2>
+        <p class="muted">Попробуйте: выберите раму, затем моторы — неподходящие по креплению детали станут серыми. Поставьте слабый регулятор — увидите предупреждение. Кнопка «В корзину» откроется, только когда сборка пройдёт все проверки.</p>
+      </div>
+      <div class="engine-status" id="engine-status" role="status" aria-live="polite">
+        <div class="bar-track"><div class="fill" id="engine-fill"></div></div>
+        <span id="engine-stage">Загружаем каталог и правила проверки…</span>
+        <span class="small" id="engine-time">первая загрузка 5–15 секунд</span>
+      </div>
+      <div id="drone-builder" class="widget-host"></div>
+      <p class="cart-note" id="cart-note" hidden>Комплект отправлен в корзину: <span id="cart-summary"></span>. На вашем сайте здесь сработает ваша корзина с вашими ценами и скидками.</p>
+    </section>
+
+    <section id="value" class="card">
+      <h2>Что это даёт магазину</h2>
+      <div class="grid value-grid">
+        <article><h3>Меньше возвратов по причине «не подошло»</h3><p>Регулятор не тянет моторы, приёмник не встаёт на полётный контроллер, винт не влезает в раму — такие сборки конструктор просто не пропустит в корзину.</p></article>
+        <article><h3>Выше средний чек</h3><p>Покупатель докупает недостающее прямо в сборке. Конструктор сам подсказывает, чего не хватает: например, добавит преобразователь питания для камеры и отметит его как обязательный.</p></article>
+        <article><h3>Свои готовые конфигурации</h3><p>Соберите проверенные комплекты под задачи — гоночный, для съёмки, грузовой — и продавайте их как готовые дроны с одной ссылки.</p></article>
+        <article><h3>Платная проверка экспертом</h3><p>Покупатель делится ссылкой на сборку. Ваш консультант видит её целиком со всеми проверками и предлагает доработку как отдельную услугу.</p></article>
+        <article><h3>Видно, где покупатели спотыкаются</h3><p>Статистика показывает, какие ошибки встречаются чаще всего и какая доля сборок доходит до корзины. Это подсказывает, каких деталей не хватает в ассортименте.</p></article>
+      </div>
+    </section>
+
+    <section id="checks" class="card">
+      <h2>Что проверяет конструктор</h2>
+      <p class="muted">Каждая деталь проверяется в связке с остальными. Серьёзная несовместимость блокирует сборку, спорные моменты показываются как предупреждения с советом, что заменить.</p>
+      <ol class="checks-list">
+        <li><b>Крепление.</b> Подходят ли моторы и стек электроники к посадочным отверстиям рамы.</li>
+        <li><b>Винты.</b> Помещаются ли винты в раму и подходят ли к валу мотора.</li>
+        <li><b>Регуляторы.</b> Выдержат ли регуляторы оборотов ток моторов с запасом.</li>
+        <li><b>Батарея.</b> Вытянет ли аккумулятор нагрузку и подходит ли по напряжению регуляторам.</li>
+        <li><b>Порты.</b> Хватит ли портов на полётном контроллере под приёмник, GPS, видеопередатчик и дополнительные модули.</li>
+        <li><b>Протоколы.</b> Понимают ли друг друга полётный контроллер, регуляторы и приёмник; если нет — что переключить.</li>
+        <li><b>Разъёмы и питание.</b> Совпадает ли разъём антенны с видеопередатчиком, есть ли подходящее питание для камеры.</li>
+        <li><b>Полёт.</b> Сколько примерно продлится полёт, какой вес и характер у дрона: гоночный, фристайл или грузовой.</li>
+      </ol>
+    </section>
+
+    <section id="cabinet" class="card">
+      <h2>Ваш кабинет</h2>
+      <p class="muted">Каталогом, правилами и статистикой управляет ваш сотрудник. Программист не нужен.</p>
+      <div class="shots">
+        <figure><a class="zoom" href="screenshots/admin-parts.png" aria-label="Открыть крупно: Каталог деталей магазина в кабинете"><img src="screenshots/admin-parts.png" alt="Каталог деталей магазина в кабинете" loading="lazy" /></a><figcaption><b>Каталог деталей.</b> Все комплектующие с характеристиками, ценами и остатками. Прайс загружается из Excel или CSV — колонки сопоставляются в два клика.</figcaption></figure>
+        <figure><a class="zoom" href="screenshots/admin-motor.png" aria-label="Открыть крупно: Карточка мотора с характеристиками"><img src="screenshots/admin-motor.png" alt="Карточка мотора с характеристиками" loading="lazy" /></a><figcaption><b>Карточка детали.</b> Для каждой категории свои поля: у мотора — обороты, токи и тяга по винтам, у батареи — ёмкость и токоотдача. Именно по ним конструктор проверяет совместимость.</figcaption></figure>
+        <figure><a class="zoom" href="screenshots/admin-rules.png" aria-label="Открыть крупно: Правила совместимости"><img src="screenshots/admin-rules.png" alt="Правила совместимости" loading="lazy" /></a><figcaption><b>Правила совместимости.</b> Задаются словами: «если рама Cinewhoop — винты не больше 3 дюймов». Строгость проверок настраивается под ваш ассортимент.</figcaption></figure>
+        <figure><a class="zoom" href="screenshots/admin-stats.png" aria-label="Открыть крупно: Статистика сборок"><img src="screenshots/admin-stats.png" alt="Статистика сборок" loading="lazy" /></a><figcaption><b>Статистика.</b> Топ причин неудачных сборок и доля сборок, дошедших до корзины.</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="embed" class="card">
+      <h2>Как встраивается</h2>
+      <div class="grid embed-grid">
+        <article><h3>Одна строка на любой сайт</h3><p>Bitrix, Tilda, WordPress или самописный сайт — конструктор подключается одной вставкой, без переделки магазина.</p></article>
+        <article><h3>В вашем стиле</h3><p>Цвета и шрифт настраиваются под ваш бренд. Покупатель не заметит, что это отдельный модуль.</p></article>
+        <article><h3>Ваша корзина, ваши цены</h3><p>Готовый комплект уходит в корзину вашего сайта. Цены, скидки и наборы считаются по вашим правилам.</p></article>
+        <article><h3>На любом экране</h3><p>Работает на компьютере, планшете и телефоне. На телефоне — упрощённый пошаговый режим.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="card dark contact">
+      <svg class="swoosh" viewBox="0 0 900 400" preserveAspectRatio="none" aria-hidden="true"><path d="M-40 250C120 90 330 40 470 130s170 260 330 140c60-45 100-60 180-40" fill="none" stroke="#025aff" stroke-width="46" stroke-linecap="round"/></svg>
+      <div class="contact-text">
+        <h2>Хотите такой конструктор на своём сайте?</h2>
+        <p>Покажем на вашем каталоге и рассчитаем внедрение. Менеджер Константин, Telegram <a href="https://t.me/domuskh" target="_blank" rel="noopener">@domuskh</a>.</p>
+      </div>
+      <a class="btn btn-white" href="https://t.me/domuskh" target="_blank" rel="noopener" id="contact-btn">Написать в Telegram</a>
+      <footer class="foot">
+        <span>Демонстрационный каталог: 80 реальных комплектующих. Цены условные.</span>
+        <span>Конструктор дронов для магазинов</span>
+      </footer>
+    </section>
+  </main>
+</div>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Скриншот крупно">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Закрыть">×</button>
+  <img id="lightbox-img" alt="" />
+</div>
+
+<script src="dronebuilder-static.iife.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

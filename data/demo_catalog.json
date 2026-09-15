@@ -1,0 +1,2505 @@
+{
+  "tenant": {
+    "slug": "demo",
+    "name": "Demo FPV Shop"
+  },
+  "categories": [
+    {
+      "slug": "frame",
+      "name": "Рама",
+      "group_slug": "frame",
+      "sort": 10,
+      "required": true,
+      "multi": false
+    },
+    {
+      "slug": "motor",
+      "name": "Моторы",
+      "group_slug": "propulsion",
+      "sort": 20,
+      "required": true,
+      "multi": false
+    },
+    {
+      "slug": "esc",
+      "name": "Регуляторы (ESC)",
+      "group_slug": "propulsion",
+      "sort": 21,
+      "required": true,
+      "multi": false
+    },
+    {
+      "slug": "propeller",
+      "name": "Пропеллеры",
+      "group_slug": "propulsion",
+      "sort": 22,
+      "required": true,
+      "multi": false
+    },
+    {
+      "slug": "fc",
+      "name": "Полётный контроллер",
+      "group_slug": "control",
+      "sort": 30,
+      "required": true,
+      "multi": false
+    },
+    {
+      "slug": "receiver",
+      "name": "Приёмник",
+      "group_slug": "control",
+      "sort": 31,
+      "required": true,
+      "multi": false
+    },
+    {
+      "slug": "gps",
+      "name": "GPS / навигация",
+      "group_slug": "control",
+      "sort": 32,
+      "required": false,
+      "multi": false
+    },
+    {
+      "slug": "camera",
+      "name": "FPV-камера",
+      "group_slug": "fpv",
+      "sort": 40,
+      "required": true,
+      "multi": false
+    },
+    {
+      "slug": "vtx",
+      "name": "Видеопередатчик (VTX)",
+      "group_slug": "fpv",
+      "sort": 41,
+      "required": true,
+      "multi": false
+    },
+    {
+      "slug": "antenna",
+      "name": "Антенна VTX",
+      "group_slug": "fpv",
+      "sort": 42,
+      "required": false,
+      "multi": false
+    },
+    {
+      "slug": "battery",
+      "name": "Аккумулятор",
+      "group_slug": "power",
+      "sort": 50,
+      "required": true,
+      "multi": false
+    },
+    {
+      "slug": "pdb_bec",
+      "name": "PDB / BEC",
+      "group_slug": "power",
+      "sort": 51,
+      "required": false,
+      "multi": false
+    },
+    {
+      "slug": "accessory",
+      "name": "Крепёж и аксессуары",
+      "group_slug": "addons",
+      "sort": 60,
+      "required": false,
+      "multi": true
+    },
+    {
+      "slug": "addon",
+      "name": "Дополнительные модули",
+      "group_slug": "addons",
+      "sort": 61,
+      "required": false,
+      "multi": true
+    }
+  ],
+  "parts": [
+    {
+      "id": "frame-mark4-v3",
+      "sku": "FRAME-MARK4-V3",
+      "name": "iFlight Nazgul5 Mark4 V3 5\" (карбон)",
+      "category": "frame",
+      "weight_g": 130,
+      "price": 6490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/frame-mark4-v3.jpg",
+      "model_url": null,
+      "attrs": {
+        "class": "5inch",
+        "max_prop_diameter_in": 5.1,
+        "wheelbase_mm": 225,
+        "material": "carbon",
+        "motor_count": 4,
+        "motor_mount_patterns": [
+          "16x16",
+          "19x19"
+        ],
+        "stack_mount_patterns": [
+          "30.5x30.5",
+          "20x20"
+        ],
+        "max_stack_height_mm": 30,
+        "camera_bay": {
+          "width_mm": 20,
+          "height_mm": 22,
+          "formats": [
+            "micro",
+            "nano"
+          ]
+        },
+        "slots": {
+          "motor": [
+            {
+              "id": "m1",
+              "x": 75,
+              "y": 75
+            },
+            {
+              "id": "m2",
+              "x": 75,
+              "y": -75
+            },
+            {
+              "id": "m3",
+              "x": -75,
+              "y": -75
+            },
+            {
+              "id": "m4",
+              "x": -75,
+              "y": 75
+            }
+          ],
+          "stack": {
+            "x": 0,
+            "y": 0
+          },
+          "battery": {
+            "x": 0,
+            "y": 10
+          },
+          "camera": {
+            "x": 60,
+            "y": 0
+          },
+          "vtx": {
+            "x": -45,
+            "y": 0
+          },
+          "rx": {
+            "x": -70,
+            "y": 0
+          },
+          "gps": {
+            "x": -80,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "frame-source-one-v5",
+      "sku": "FRAME-SOURCE-ONE-V5",
+      "name": "TBS Source One V5 5\" (карбон)",
+      "category": "frame",
+      "weight_g": 118,
+      "price": 3990,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/frame-source-one-v5.jpg",
+      "model_url": null,
+      "attrs": {
+        "class": "5inch",
+        "max_prop_diameter_in": 5.1,
+        "wheelbase_mm": 228,
+        "material": "carbon",
+        "motor_count": 4,
+        "motor_mount_patterns": [
+          "16x16",
+          "19x19"
+        ],
+        "stack_mount_patterns": [
+          "30.5x30.5",
+          "20x20"
+        ],
+        "max_stack_height_mm": 28,
+        "camera_bay": {
+          "width_mm": 20,
+          "height_mm": 22,
+          "formats": [
+            "micro"
+          ]
+        },
+        "slots": {
+          "motor": [
+            {
+              "id": "m1",
+              "x": 76,
+              "y": 76
+            },
+            {
+              "id": "m2",
+              "x": 76,
+              "y": -76
+            },
+            {
+              "id": "m3",
+              "x": -76,
+              "y": -76
+            },
+            {
+              "id": "m4",
+              "x": -76,
+              "y": 76
+            }
+          ],
+          "stack": {
+            "x": 0,
+            "y": 0
+          },
+          "battery": {
+            "x": 0,
+            "y": 8
+          },
+          "camera": {
+            "x": 60,
+            "y": 0
+          },
+          "vtx": {
+            "x": -45,
+            "y": 0
+          },
+          "rx": {
+            "x": -70,
+            "y": 0
+          },
+          "gps": {
+            "x": -80,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "frame-apex-hd",
+      "sku": "FRAME-APEX-HD",
+      "name": "ImpulseRC Apex HD 5\" (карбон, низкий стек)",
+      "category": "frame",
+      "weight_g": 140,
+      "price": 12900,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/frame-apex-hd.jpg",
+      "model_url": null,
+      "attrs": {
+        "class": "5inch",
+        "max_prop_diameter_in": 5.1,
+        "wheelbase_mm": 226,
+        "material": "carbon",
+        "motor_count": 4,
+        "motor_mount_patterns": [
+          "16x16"
+        ],
+        "stack_mount_patterns": [
+          "30.5x30.5"
+        ],
+        "max_stack_height_mm": 14,
+        "camera_bay": {
+          "width_mm": 20,
+          "height_mm": 22,
+          "formats": [
+            "micro"
+          ]
+        },
+        "slots": {
+          "motor": [
+            {
+              "id": "m1",
+              "x": 74,
+              "y": 74
+            },
+            {
+              "id": "m2",
+              "x": 74,
+              "y": -74
+            },
+            {
+              "id": "m3",
+              "x": -74,
+              "y": -74
+            },
+            {
+              "id": "m4",
+              "x": -74,
+              "y": 74
+            }
+          ],
+          "stack": {
+            "x": 0,
+            "y": 0
+          },
+          "battery": {
+            "x": 0,
+            "y": 6
+          },
+          "camera": {
+            "x": 60,
+            "y": 0
+          },
+          "vtx": {
+            "x": -45,
+            "y": 0
+          },
+          "rx": {
+            "x": -70,
+            "y": 0
+          },
+          "gps": {
+            "x": -80,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "frame-protek35",
+      "sku": "FRAME-PROTEK35",
+      "name": "iFlight ProTek35 Cinewhoop 3.5\"→3\" (карбон + защита)",
+      "category": "frame",
+      "weight_g": 95,
+      "price": 7490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/frame-protek35.jpg",
+      "model_url": null,
+      "attrs": {
+        "class": "cinewhoop",
+        "max_prop_diameter_in": 3,
+        "wheelbase_mm": 155,
+        "material": "carbon",
+        "motor_count": 4,
+        "motor_mount_patterns": [
+          "12x12",
+          "16x16"
+        ],
+        "stack_mount_patterns": [
+          "20x20",
+          "25.5x25.5"
+        ],
+        "max_stack_height_mm": 18,
+        "camera_bay": {
+          "width_mm": 20,
+          "height_mm": 20,
+          "formats": [
+            "micro",
+            "nano"
+          ]
+        },
+        "slots": {
+          "motor": [
+            {
+              "id": "m1",
+              "x": 52,
+              "y": 52
+            },
+            {
+              "id": "m2",
+              "x": 52,
+              "y": -52
+            },
+            {
+              "id": "m3",
+              "x": -52,
+              "y": -52
+            },
+            {
+              "id": "m4",
+              "x": -52,
+              "y": 52
+            }
+          ],
+          "stack": {
+            "x": 0,
+            "y": 0
+          },
+          "battery": {
+            "x": 0,
+            "y": 5
+          },
+          "camera": {
+            "x": 60,
+            "y": 0
+          },
+          "vtx": {
+            "x": -45,
+            "y": 0
+          },
+          "rx": {
+            "x": -70,
+            "y": 0
+          },
+          "gps": {
+            "x": -80,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "frame-chimera7",
+      "sku": "FRAME-CHIMERA7",
+      "name": "iFlight Chimera7 Pro V2 7\" (карбон)",
+      "category": "frame",
+      "weight_g": 210,
+      "price": 11900,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/frame-chimera7.jpg",
+      "model_url": null,
+      "attrs": {
+        "class": "7inch",
+        "max_prop_diameter_in": 7.5,
+        "wheelbase_mm": 295,
+        "material": "carbon",
+        "motor_count": 4,
+        "motor_mount_patterns": [
+          "19x19",
+          "16x16"
+        ],
+        "stack_mount_patterns": [
+          "30.5x30.5",
+          "20x20"
+        ],
+        "max_stack_height_mm": 35,
+        "camera_bay": {
+          "width_mm": 21,
+          "height_mm": 22,
+          "formats": [
+            "micro",
+            "nano"
+          ]
+        },
+        "slots": {
+          "motor": [
+            {
+              "id": "m1",
+              "x": 110,
+              "y": 110
+            },
+            {
+              "id": "m2",
+              "x": 110,
+              "y": -110
+            },
+            {
+              "id": "m3",
+              "x": -110,
+              "y": -110
+            },
+            {
+              "id": "m4",
+              "x": -110,
+              "y": 110
+            }
+          ],
+          "stack": {
+            "x": 0,
+            "y": 0
+          },
+          "battery": {
+            "x": 0,
+            "y": 12
+          },
+          "camera": {
+            "x": 60,
+            "y": 0
+          },
+          "vtx": {
+            "x": -45,
+            "y": 0
+          },
+          "rx": {
+            "x": -70,
+            "y": 0
+          },
+          "gps": {
+            "x": -80,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "frame-cinelog25-plastic",
+      "sku": "FRAME-CINELOG25-PLASTIC",
+      "name": "GEPRC Cinelog25 V2 2.5\" (пластиковые дакты)",
+      "category": "frame",
+      "weight_g": 62,
+      "price": 4290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/frame-cinelog25-plastic.jpg",
+      "model_url": null,
+      "attrs": {
+        "class": "cinewhoop",
+        "max_prop_diameter_in": 2.5,
+        "wheelbase_mm": 116,
+        "material": "plastic",
+        "motor_count": 4,
+        "motor_mount_patterns": [
+          "12x12"
+        ],
+        "stack_mount_patterns": [
+          "20x20",
+          "25.5x25.5"
+        ],
+        "max_stack_height_mm": 16,
+        "camera_bay": {
+          "width_mm": 15,
+          "height_mm": 15,
+          "formats": [
+            "nano"
+          ]
+        },
+        "slots": {
+          "motor": [
+            {
+              "id": "m1",
+              "x": 41,
+              "y": 41
+            },
+            {
+              "id": "m2",
+              "x": 41,
+              "y": -41
+            },
+            {
+              "id": "m3",
+              "x": -41,
+              "y": -41
+            },
+            {
+              "id": "m4",
+              "x": -41,
+              "y": 41
+            }
+          ],
+          "stack": {
+            "x": 0,
+            "y": 0
+          },
+          "battery": {
+            "x": 0,
+            "y": 4
+          },
+          "camera": {
+            "x": 60,
+            "y": 0
+          },
+          "vtx": {
+            "x": -45,
+            "y": 0
+          },
+          "rx": {
+            "x": -70,
+            "y": 0
+          },
+          "gps": {
+            "x": -80,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "motor-tmotor-f60-pro4-1750kv",
+      "sku": "MOTOR-TMOTOR-F60-PRO4-1750KV",
+      "name": "T-Motor F60 Pro IV 2207 1750KV",
+      "category": "motor",
+      "weight_g": 33.5,
+      "price": 3290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/motor-tmotor-f60-pro4-1750kv.jpg",
+      "model_url": null,
+      "attrs": {
+        "stator": "2207",
+        "kv": 1750,
+        "max_thrust_g": 1750,
+        "max_current_a": 38,
+        "peak_current_a": 45,
+        "mount_pattern": "16x16",
+        "shaft": "M5",
+        "cells_min": 4,
+        "cells_max": 6,
+        "thrust_table": [
+          {
+            "prop": "5x4.3x3",
+            "cells": 6,
+            "thrust_g": 1750,
+            "current_a": 38
+          },
+          {
+            "prop": "5.1x4.66x3",
+            "cells": 6,
+            "thrust_g": 1850,
+            "current_a": 42
+          },
+          {
+            "prop": "5x4.3x3",
+            "cells": 4,
+            "thrust_g": 1150,
+            "current_a": 27
+          }
+        ]
+      }
+    },
+    {
+      "id": "motor-emax-eco2-2207-1900kv",
+      "sku": "MOTOR-EMAX-ECO2-2207-1900KV",
+      "name": "EMAX ECO II 2207 1900KV",
+      "category": "motor",
+      "weight_g": 34,
+      "price": 1590,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/motor-emax-eco2-2207-1900kv.jpg",
+      "model_url": null,
+      "attrs": {
+        "stator": "2207",
+        "kv": 1900,
+        "max_thrust_g": 1620,
+        "max_current_a": 36,
+        "peak_current_a": 42,
+        "mount_pattern": "16x16",
+        "shaft": "M5",
+        "cells_min": 4,
+        "cells_max": 6,
+        "thrust_table": [
+          {
+            "prop": "5x4.3x3",
+            "cells": 6,
+            "thrust_g": 1620,
+            "current_a": 36
+          },
+          {
+            "prop": "5x4.3x3",
+            "cells": 4,
+            "thrust_g": 1080,
+            "current_a": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "motor-xing-2306-2450kv",
+      "sku": "MOTOR-XING-2306-2450KV",
+      "name": "iFlight XING 2306 2450KV (4S)",
+      "category": "motor",
+      "weight_g": 31,
+      "price": 2190,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/motor-xing-2306-2450kv.jpg",
+      "model_url": null,
+      "attrs": {
+        "stator": "2306",
+        "kv": 2450,
+        "max_thrust_g": 1350,
+        "max_current_a": 32,
+        "peak_current_a": 38,
+        "mount_pattern": "16x16",
+        "shaft": "M5",
+        "cells_min": 3,
+        "cells_max": 4,
+        "thrust_table": [
+          {
+            "prop": "5x4.3x3",
+            "cells": 4,
+            "thrust_g": 1350,
+            "current_a": 32
+          },
+          {
+            "prop": "5.1x4.66x3",
+            "cells": 4,
+            "thrust_g": 1420,
+            "current_a": 35
+          }
+        ]
+      }
+    },
+    {
+      "id": "motor-xing2-2807-1300kv",
+      "sku": "MOTOR-XING2-2807-1300KV",
+      "name": "iFlight XING2 2807 1300KV (7\")",
+      "category": "motor",
+      "weight_g": 56,
+      "price": 3490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/motor-xing2-2807-1300kv.jpg",
+      "model_url": null,
+      "attrs": {
+        "stator": "2807",
+        "kv": 1300,
+        "max_thrust_g": 2400,
+        "max_current_a": 42,
+        "peak_current_a": 50,
+        "mount_pattern": "19x19",
+        "shaft": "M5",
+        "cells_min": 4,
+        "cells_max": 6,
+        "thrust_table": [
+          {
+            "prop": "7x4x3",
+            "cells": 6,
+            "thrust_g": 2400,
+            "current_a": 42
+          },
+          {
+            "prop": "7x4x3",
+            "cells": 4,
+            "thrust_g": 1600,
+            "current_a": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "motor-1404-3800kv",
+      "sku": "MOTOR-1404-3800KV",
+      "name": "BetaFPV 1404 3800KV (T-mount)",
+      "category": "motor",
+      "weight_g": 9.5,
+      "price": 1290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/motor-1404-3800kv.jpg",
+      "model_url": null,
+      "attrs": {
+        "stator": "1404",
+        "kv": 3800,
+        "max_thrust_g": 520,
+        "max_current_a": 14,
+        "peak_current_a": 17,
+        "mount_pattern": "12x12",
+        "shaft": "T-mount",
+        "cells_min": 3,
+        "cells_max": 4,
+        "thrust_table": [
+          {
+            "prop": "3x3x3",
+            "cells": 4,
+            "thrust_g": 520,
+            "current_a": 14
+          },
+          {
+            "prop": "3x2.5x3",
+            "cells": 4,
+            "thrust_g": 470,
+            "current_a": 12
+          }
+        ]
+      }
+    },
+    {
+      "id": "motor-generic-2207-1800kv",
+      "sku": "MOTOR-GENERIC-2207-1800KV",
+      "name": "NoName 2207 1800KV (без стендовых замеров)",
+      "category": "motor",
+      "weight_g": 32,
+      "price": 890,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/motor-generic-2207-1800kv.jpg",
+      "model_url": null,
+      "attrs": {
+        "stator": "2207",
+        "kv": 1800,
+        "max_thrust_g": 1600,
+        "max_current_a": 36,
+        "peak_current_a": 43,
+        "mount_pattern": "16x16",
+        "shaft": "M5",
+        "cells_min": 4,
+        "cells_max": 6
+      }
+    },
+    {
+      "id": "esc-blitz-e55-4in1",
+      "sku": "ESC-BLITZ-E55-4IN1",
+      "name": "iFlight BLITZ E55 4-in-1 ESC 55A (3–6S)",
+      "category": "esc",
+      "weight_g": 15,
+      "price": 4990,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/esc-blitz-e55-4in1.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "4in1",
+        "cont_current_a": 55,
+        "peak_current_a": 65,
+        "protocols": [
+          "DSHOT150",
+          "DSHOT300",
+          "DSHOT600"
+        ],
+        "cells_min": 3,
+        "cells_max": 6,
+        "bec": null,
+        "mount_pattern": "30.5x30.5",
+        "height_mm": 8
+      }
+    },
+    {
+      "id": "esc-mamba-f60-4in1",
+      "sku": "ESC-MAMBA-F60-4IN1",
+      "name": "Diatone Mamba F60 Pro 4-in-1 ESC 60A (3–6S)",
+      "category": "esc",
+      "weight_g": 16,
+      "price": 5290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/esc-mamba-f60-4in1.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "4in1",
+        "cont_current_a": 60,
+        "peak_current_a": 70,
+        "protocols": [
+          "DSHOT150",
+          "DSHOT300",
+          "DSHOT600"
+        ],
+        "cells_min": 3,
+        "cells_max": 6,
+        "bec": {
+          "voltage": 5,
+          "current_a": 2
+        },
+        "mount_pattern": "30.5x30.5",
+        "height_mm": 8
+      }
+    },
+    {
+      "id": "esc-hobbywing-45a-4in1",
+      "sku": "ESC-HOBBYWING-45A-4IN1",
+      "name": "Hobbywing XRotor Micro 45A 4-in-1 (3–6S)",
+      "category": "esc",
+      "weight_g": 14,
+      "price": 3890,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/esc-hobbywing-45a-4in1.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "4in1",
+        "cont_current_a": 45,
+        "peak_current_a": 55,
+        "protocols": [
+          "DSHOT300",
+          "DSHOT600"
+        ],
+        "cells_min": 3,
+        "cells_max": 6,
+        "bec": {
+          "voltage": 5,
+          "current_a": 2
+        },
+        "mount_pattern": "30.5x30.5",
+        "height_mm": 8
+      }
+    },
+    {
+      "id": "esc-aikon-35a-4in1-4s",
+      "sku": "ESC-AIKON-35A-4IN1-4S",
+      "name": "Aikon AK32 35A 4-in-1 (3–4S, DShot300)",
+      "category": "esc",
+      "weight_g": 12,
+      "price": 2890,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/esc-aikon-35a-4in1-4s.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "4in1",
+        "cont_current_a": 35,
+        "peak_current_a": 45,
+        "protocols": [
+          "DSHOT150",
+          "DSHOT300"
+        ],
+        "cells_min": 3,
+        "cells_max": 4,
+        "bec": {
+          "voltage": 5,
+          "current_a": 2
+        },
+        "mount_pattern": "20x20",
+        "height_mm": 7
+      }
+    },
+    {
+      "id": "esc-legacy-20a-4in1",
+      "sku": "ESC-LEGACY-20A-4IN1",
+      "name": "Racerstar 20A 4-in-1 (устаревший, PWM/Oneshot)",
+      "category": "esc",
+      "weight_g": 10,
+      "price": 990,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/esc-legacy-20a-4in1.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "4in1",
+        "cont_current_a": 20,
+        "peak_current_a": 25,
+        "protocols": [
+          "PWM",
+          "ONESHOT125",
+          "MULTISHOT"
+        ],
+        "cells_min": 2,
+        "cells_max": 4,
+        "bec": {
+          "voltage": 5,
+          "current_a": 1
+        },
+        "mount_pattern": "20x20",
+        "height_mm": 6
+      }
+    },
+    {
+      "id": "esc-tekko32-50a-single",
+      "sku": "ESC-TEKKO32-50A-SINGLE",
+      "name": "Holybro Tekko32 F3 50A (одиночный)",
+      "category": "esc",
+      "weight_g": 6.5,
+      "price": 1390,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/esc-tekko32-50a-single.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "single",
+        "cont_current_a": 50,
+        "peak_current_a": 60,
+        "protocols": [
+          "DSHOT150",
+          "DSHOT300",
+          "DSHOT600",
+          "DSHOT1200"
+        ],
+        "cells_min": 3,
+        "cells_max": 6,
+        "bec": null,
+        "mount_pattern": null,
+        "height_mm": 0
+      }
+    },
+    {
+      "id": "esc-happymodel-25a-4in1",
+      "sku": "ESC-HAPPYMODEL-25A-4IN1",
+      "name": "HAKRC 25A 4-in-1 20x20 (2–4S)",
+      "category": "esc",
+      "weight_g": 7,
+      "price": 2190,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/esc-happymodel-25a-4in1.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "4in1",
+        "cont_current_a": 25,
+        "peak_current_a": 30,
+        "protocols": [
+          "DSHOT300",
+          "DSHOT600"
+        ],
+        "cells_min": 2,
+        "cells_max": 4,
+        "bec": {
+          "voltage": 5,
+          "current_a": 1.5
+        },
+        "mount_pattern": "20x20",
+        "height_mm": 6
+      }
+    },
+    {
+      "id": "prop-hq-5x4.3x3",
+      "sku": "PROP-HQ-5X4.3X3",
+      "name": "HQProp 5x4.3x3 V1S (комплект 4 шт)",
+      "category": "propeller",
+      "weight_g": 4.5,
+      "price": 390,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/prop-hq-5x4.3x3.jpg",
+      "model_url": null,
+      "attrs": {
+        "diameter_in": 5,
+        "pitch_in": 4.3,
+        "blades": 3,
+        "shaft": "M5",
+        "material": "PC"
+      }
+    },
+    {
+      "id": "prop-gemfan-51466",
+      "sku": "PROP-GEMFAN-51466",
+      "name": "Gemfan Hurricane 51466 (5.1x4.66x3)",
+      "category": "propeller",
+      "weight_g": 4.2,
+      "price": 420,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/prop-gemfan-51466.jpg",
+      "model_url": null,
+      "attrs": {
+        "diameter_in": 5.1,
+        "pitch_in": 4.66,
+        "blades": 3,
+        "shaft": "M5",
+        "material": "PC"
+      }
+    },
+    {
+      "id": "prop-hq-7x4x3",
+      "sku": "PROP-HQ-7X4X3",
+      "name": "HQProp 7x4x3 (7\")",
+      "category": "propeller",
+      "weight_g": 10,
+      "price": 690,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/prop-hq-7x4x3.jpg",
+      "model_url": null,
+      "attrs": {
+        "diameter_in": 7,
+        "pitch_in": 4,
+        "blades": 3,
+        "shaft": "M5",
+        "material": "PC"
+      }
+    },
+    {
+      "id": "prop-gemfan-3018-3",
+      "sku": "PROP-GEMFAN-3018-3",
+      "name": "Gemfan 3018-3 (3\", отверстие 1.5 мм)",
+      "category": "propeller",
+      "weight_g": 1.8,
+      "price": 290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/prop-gemfan-3018-3.jpg",
+      "model_url": null,
+      "attrs": {
+        "diameter_in": 3,
+        "pitch_in": 1.8,
+        "blades": 3,
+        "shaft": "1.5mm",
+        "material": "PC"
+      }
+    },
+    {
+      "id": "prop-hq-3x3x3-tmount",
+      "sku": "PROP-HQ-3X3X3-TMOUNT",
+      "name": "HQProp 3x3x3 T-mount",
+      "category": "propeller",
+      "weight_g": 2,
+      "price": 310,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/prop-hq-3x3x3-tmount.jpg",
+      "model_url": null,
+      "attrs": {
+        "diameter_in": 3,
+        "pitch_in": 3,
+        "blades": 3,
+        "shaft": "T-mount",
+        "material": "PC"
+      }
+    },
+    {
+      "id": "prop-hq-6x3x3",
+      "sku": "PROP-HQ-6X3X3",
+      "name": "HQProp 6x3x3 (6\")",
+      "category": "propeller",
+      "weight_g": 6,
+      "price": 490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/prop-hq-6x3x3.jpg",
+      "model_url": null,
+      "attrs": {
+        "diameter_in": 6,
+        "pitch_in": 3,
+        "blades": 3,
+        "shaft": "M5",
+        "material": "PC"
+      }
+    },
+    {
+      "id": "fc-speedybee-f405-v3",
+      "sku": "FC-SPEEDYBEE-F405-V3",
+      "name": "SpeedyBee F405 V3 (F4, 6 UART, 30.5x30.5)",
+      "category": "fc",
+      "weight_g": 9,
+      "price": 3490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/fc-speedybee-f405-v3.jpg",
+      "model_url": null,
+      "attrs": {
+        "mcu": "F4",
+        "gyro": "BMI270",
+        "uart_count": 6,
+        "has_inverted_uart": false,
+        "esc_protocols": [
+          "DSHOT150",
+          "DSHOT300",
+          "DSHOT600"
+        ],
+        "mount_pattern": "30.5x30.5",
+        "vin_min": 7.4,
+        "vin_max": 26,
+        "barometer": true,
+        "bec": [
+          {
+            "voltage": 5,
+            "current_a": 2
+          },
+          {
+            "voltage": 9,
+            "current_a": 3
+          }
+        ],
+        "height_mm": 7
+      }
+    },
+    {
+      "id": "fc-omnibus-f4-v3",
+      "sku": "FC-OMNIBUS-F4-V3",
+      "name": "Omnibus F4 V3 (F4, 3 UART, поддержка PWM/Oneshot)",
+      "category": "fc",
+      "weight_g": 8,
+      "price": 1890,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/fc-omnibus-f4-v3.jpg",
+      "model_url": null,
+      "attrs": {
+        "mcu": "F4",
+        "gyro": "MPU6000",
+        "uart_count": 3,
+        "has_inverted_uart": false,
+        "esc_protocols": [
+          "PWM",
+          "ONESHOT125",
+          "MULTISHOT",
+          "DSHOT150",
+          "DSHOT300",
+          "DSHOT600"
+        ],
+        "mount_pattern": "30.5x30.5",
+        "vin_min": 7.4,
+        "vin_max": 17,
+        "barometer": true,
+        "bec": [
+          {
+            "voltage": 5,
+            "current_a": 1
+          }
+        ],
+        "height_mm": 7
+      }
+    },
+    {
+      "id": "fc-matek-f722-se",
+      "sku": "FC-MATEK-F722-SE",
+      "name": "Matek F722-SE (F7, 5 UART, инверсия)",
+      "category": "fc",
+      "weight_g": 10,
+      "price": 5490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/fc-matek-f722-se.jpg",
+      "model_url": null,
+      "attrs": {
+        "mcu": "F7",
+        "gyro": "MPU6000",
+        "uart_count": 5,
+        "has_inverted_uart": true,
+        "esc_protocols": [
+          "DSHOT150",
+          "DSHOT300",
+          "DSHOT600"
+        ],
+        "mount_pattern": "30.5x30.5",
+        "vin_min": 6,
+        "vin_max": 36,
+        "barometer": true,
+        "bec": [
+          {
+            "voltage": 5,
+            "current_a": 1.5
+          },
+          {
+            "voltage": 9,
+            "current_a": 2
+          }
+        ],
+        "height_mm": 7
+      }
+    },
+    {
+      "id": "fc-matek-h743-slim",
+      "sku": "FC-MATEK-H743-SLIM",
+      "name": "Matek H743-SLIM (H7, 7 UART, инверсия)",
+      "category": "fc",
+      "weight_g": 8,
+      "price": 7990,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/fc-matek-h743-slim.jpg",
+      "model_url": null,
+      "attrs": {
+        "mcu": "H7",
+        "gyro": "MPU6000",
+        "uart_count": 7,
+        "has_inverted_uart": true,
+        "esc_protocols": [
+          "DSHOT150",
+          "DSHOT300",
+          "DSHOT600"
+        ],
+        "mount_pattern": "30.5x30.5",
+        "vin_min": 6,
+        "vin_max": 36,
+        "barometer": true,
+        "bec": [
+          {
+            "voltage": 5,
+            "current_a": 2
+          },
+          {
+            "voltage": 9,
+            "current_a": 2
+          }
+        ],
+        "height_mm": 7
+      }
+    },
+    {
+      "id": "fc-betafpv-f411-20x20",
+      "sku": "FC-BETAFPV-F411-20X20",
+      "name": "BetaFPV F411 20x20 (F4, 2 UART)",
+      "category": "fc",
+      "weight_g": 5,
+      "price": 2290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/fc-betafpv-f411-20x20.jpg",
+      "model_url": null,
+      "attrs": {
+        "mcu": "F4",
+        "gyro": "MPU6000",
+        "uart_count": 2,
+        "has_inverted_uart": false,
+        "esc_protocols": [
+          "DSHOT300",
+          "DSHOT600"
+        ],
+        "mount_pattern": "20x20",
+        "vin_min": 7.4,
+        "vin_max": 17,
+        "barometer": false,
+        "bec": [
+          {
+            "voltage": 5,
+            "current_a": 1
+          }
+        ],
+        "height_mm": 6
+      }
+    },
+    {
+      "id": "fc-speedybee-f405-v3-tall",
+      "sku": "FC-SPEEDYBEE-F405-V3-TALL",
+      "name": "SpeedyBee F405 V3 + пластиковый кожух (высокий стек)",
+      "category": "fc",
+      "weight_g": 12,
+      "price": 3690,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/fc-speedybee-f405-v3-tall.jpg",
+      "model_url": null,
+      "attrs": {
+        "mcu": "F4",
+        "gyro": "BMI270",
+        "uart_count": 6,
+        "has_inverted_uart": false,
+        "esc_protocols": [
+          "DSHOT150",
+          "DSHOT300",
+          "DSHOT600"
+        ],
+        "mount_pattern": "30.5x30.5",
+        "vin_min": 7.4,
+        "vin_max": 26,
+        "barometer": true,
+        "bec": [
+          {
+            "voltage": 5,
+            "current_a": 2
+          }
+        ],
+        "height_mm": 26
+      }
+    },
+    {
+      "id": "rx-happymodel-ep2-elrs",
+      "sku": "RX-HAPPYMODEL-EP2-ELRS",
+      "name": "HappyModel EP2 ELRS 2.4G (CRSF)",
+      "category": "receiver",
+      "weight_g": 1,
+      "price": 1290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/rx-happymodel-ep2-elrs.jpg",
+      "model_url": null,
+      "attrs": {
+        "protocol": "CRSF",
+        "band": "2.4G",
+        "voltage": 5,
+        "channels": 16,
+        "telemetry": true,
+        "requires_inverted_uart": false,
+        "uart_needed": 1
+      }
+    },
+    {
+      "id": "rx-radiomaster-rp3-900",
+      "sku": "RX-RADIOMASTER-RP3-900",
+      "name": "RadioMaster RP3 ELRS 900MHz (CRSF)",
+      "category": "receiver",
+      "weight_g": 2.5,
+      "price": 1990,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/rx-radiomaster-rp3-900.jpg",
+      "model_url": null,
+      "attrs": {
+        "protocol": "CRSF",
+        "band": "900M",
+        "voltage": 5,
+        "channels": 16,
+        "telemetry": true,
+        "requires_inverted_uart": false,
+        "uart_needed": 1
+      }
+    },
+    {
+      "id": "rx-tbs-crossfire-nano",
+      "sku": "RX-TBS-CROSSFIRE-NANO",
+      "name": "TBS Crossfire Nano RX (CRSF 868/915)",
+      "category": "receiver",
+      "weight_g": 2,
+      "price": 3490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/rx-tbs-crossfire-nano.jpg",
+      "model_url": null,
+      "attrs": {
+        "protocol": "CRSF",
+        "band": "868M",
+        "voltage": 5,
+        "channels": 12,
+        "telemetry": true,
+        "requires_inverted_uart": false,
+        "uart_needed": 1
+      }
+    },
+    {
+      "id": "rx-frsky-r-xsr",
+      "sku": "RX-FRSKY-R-XSR",
+      "name": "FrSky R-XSR (SBUS, S.Port)",
+      "category": "receiver",
+      "weight_g": 1.5,
+      "price": 2490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/rx-frsky-r-xsr.jpg",
+      "model_url": null,
+      "attrs": {
+        "protocol": "SBUS",
+        "band": "2.4G",
+        "voltage": 5,
+        "channels": 16,
+        "telemetry": true,
+        "requires_inverted_uart": true,
+        "uart_needed": 1
+      }
+    },
+    {
+      "id": "rx-spektrum-4650",
+      "sku": "RX-SPEKTRUM-4650",
+      "name": "Spektrum SPM4650 DSMX",
+      "category": "receiver",
+      "weight_g": 1.7,
+      "price": 2790,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/rx-spektrum-4650.jpg",
+      "model_url": null,
+      "attrs": {
+        "protocol": "DSMX",
+        "band": "2.4G",
+        "voltage": 3.3,
+        "channels": 12,
+        "telemetry": true,
+        "requires_inverted_uart": false,
+        "uart_needed": 1
+      }
+    },
+    {
+      "id": "rx-legacy-ppm",
+      "sku": "RX-LEGACY-PPM",
+      "name": "NoName PPM-приёмник (устаревший протокол)",
+      "category": "receiver",
+      "weight_g": 5,
+      "price": 490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/rx-legacy-ppm.jpg",
+      "model_url": null,
+      "attrs": {
+        "protocol": "PPM",
+        "band": "2.4G",
+        "voltage": 5,
+        "channels": 8,
+        "telemetry": false,
+        "requires_inverted_uart": false,
+        "uart_needed": 0
+      }
+    },
+    {
+      "id": "gps-beitian-bn220",
+      "sku": "GPS-BEITIAN-BN220",
+      "name": "Beitian BN-220 GPS",
+      "category": "gps",
+      "weight_g": 5.3,
+      "price": 1190,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/gps-beitian-bn220.jpg",
+      "model_url": null,
+      "attrs": {
+        "constellations": [
+          "GPS",
+          "GLONASS"
+        ],
+        "rate_hz": 5,
+        "protocol": "UBLOX",
+        "voltage": 5,
+        "uart_needed": 1,
+        "current_a": 0.05
+      }
+    },
+    {
+      "id": "gps-matek-m10q-5883",
+      "sku": "GPS-MATEK-M10Q-5883",
+      "name": "Matek M10Q-5883 GPS + компас",
+      "category": "gps",
+      "weight_g": 8,
+      "price": 2490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/gps-matek-m10q-5883.jpg",
+      "model_url": null,
+      "attrs": {
+        "constellations": [
+          "GPS",
+          "GLONASS",
+          "Galileo",
+          "BeiDou"
+        ],
+        "rate_hz": 10,
+        "protocol": "UBLOX",
+        "voltage": 5,
+        "uart_needed": 1,
+        "current_a": 0.06
+      }
+    },
+    {
+      "id": "cam-caddx-ratel2",
+      "sku": "CAM-CADDX-RATEL2",
+      "name": "Caddx Ratel 2 (micro, 5–40V)",
+      "category": "camera",
+      "weight_g": 5.8,
+      "price": 2990,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/cam-caddx-ratel2.jpg",
+      "model_url": null,
+      "attrs": {
+        "format": "micro",
+        "resolution": "1200TVL",
+        "aspect": "4:3/16:9",
+        "vin_min": 5,
+        "vin_max": 40,
+        "fov": 165,
+        "width_mm": 19,
+        "height_mm": 19,
+        "current_a": 0.15
+      }
+    },
+    {
+      "id": "cam-runcam-phoenix2",
+      "sku": "CAM-RUNCAM-PHOENIX2",
+      "name": "RunCam Phoenix 2 (micro, 5–36V)",
+      "category": "camera",
+      "weight_g": 9,
+      "price": 2790,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/cam-runcam-phoenix2.jpg",
+      "model_url": null,
+      "attrs": {
+        "format": "micro",
+        "resolution": "1000TVL",
+        "aspect": "4:3/16:9",
+        "vin_min": 5,
+        "vin_max": 36,
+        "fov": 155,
+        "width_mm": 19,
+        "height_mm": 20,
+        "current_a": 0.15
+      }
+    },
+    {
+      "id": "cam-foxeer-razer-nano",
+      "sku": "CAM-FOXEER-RAZER-NANO",
+      "name": "Foxeer Razer Nano (nano, только 5V)",
+      "category": "camera",
+      "weight_g": 3.2,
+      "price": 1990,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/cam-foxeer-razer-nano.jpg",
+      "model_url": null,
+      "attrs": {
+        "format": "nano",
+        "resolution": "1200TVL",
+        "aspect": "4:3/16:9",
+        "vin_min": 4.5,
+        "vin_max": 6,
+        "fov": 160,
+        "width_mm": 14,
+        "height_mm": 14,
+        "current_a": 0.12
+      }
+    },
+    {
+      "id": "cam-runcam-swift2-full",
+      "sku": "CAM-RUNCAM-SWIFT2-FULL",
+      "name": "RunCam Swift 2 (full-size, 5–36V)",
+      "category": "camera",
+      "weight_g": 14,
+      "price": 2490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/cam-runcam-swift2-full.jpg",
+      "model_url": null,
+      "attrs": {
+        "format": "full",
+        "resolution": "600TVL",
+        "aspect": "4:3",
+        "vin_min": 5,
+        "vin_max": 36,
+        "fov": 150,
+        "width_mm": 28,
+        "height_mm": 28,
+        "current_a": 0.13
+      }
+    },
+    {
+      "id": "cam-foxeer-arrow-12v",
+      "sku": "CAM-FOXEER-ARROW-12V",
+      "name": "Foxeer Arrow Micro Pro 12V-версия (9–17V)",
+      "category": "camera",
+      "weight_g": 9,
+      "price": 1890,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/cam-foxeer-arrow-12v.jpg",
+      "model_url": null,
+      "attrs": {
+        "format": "micro",
+        "resolution": "600TVL",
+        "aspect": "4:3",
+        "vin_min": 9,
+        "vin_max": 17,
+        "fov": 150,
+        "width_mm": 19,
+        "height_mm": 19,
+        "current_a": 0.12
+      }
+    },
+    {
+      "id": "vtx-rush-tank-solo",
+      "sku": "VTX-RUSH-TANK-SOLO",
+      "name": "Rush Tank Solo 5.8G (SmartAudio, MMCX, 2–6S)",
+      "category": "vtx",
+      "weight_g": 9,
+      "price": 4290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/vtx-rush-tank-solo.jpg",
+      "model_url": null,
+      "attrs": {
+        "power_mw": [
+          25,
+          200,
+          500,
+          800
+        ],
+        "band": "5.8G",
+        "control": "SMARTAUDIO",
+        "antenna_connector": "MMCX",
+        "vin_min": 7,
+        "vin_max": 26,
+        "current_a": 0.7,
+        "mount_pattern": "30.5x30.5",
+        "cam_out_voltage": 5,
+        "height_mm": 6
+      }
+    },
+    {
+      "id": "vtx-akk-fx3-ultimate",
+      "sku": "VTX-AKK-FX3-ULTIMATE",
+      "name": "AKK FX3 Ultimate 5.8G (SmartAudio, SMA, 2–6S)",
+      "category": "vtx",
+      "weight_g": 10,
+      "price": 2690,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/vtx-akk-fx3-ultimate.jpg",
+      "model_url": null,
+      "attrs": {
+        "power_mw": [
+          25,
+          200,
+          600,
+          1000
+        ],
+        "band": "5.8G",
+        "control": "SMARTAUDIO",
+        "antenna_connector": "SMA",
+        "vin_min": 7,
+        "vin_max": 26,
+        "current_a": 0.8,
+        "mount_pattern": "30.5x30.5",
+        "cam_out_voltage": 5,
+        "height_mm": 6
+      }
+    },
+    {
+      "id": "vtx-tramp-hv",
+      "sku": "VTX-TRAMP-HV",
+      "name": "ImmersionRC Tramp HV (Tramp, U.FL, 2–4S)",
+      "category": "vtx",
+      "weight_g": 4.5,
+      "price": 3490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/vtx-tramp-hv.jpg",
+      "model_url": null,
+      "attrs": {
+        "power_mw": [
+          1,
+          25,
+          200,
+          400,
+          600
+        ],
+        "band": "5.8G",
+        "control": "TRAMP",
+        "antenna_connector": "UFL",
+        "vin_min": 6,
+        "vin_max": 18,
+        "current_a": 0.5,
+        "mount_pattern": null,
+        "cam_out_voltage": null,
+        "height_mm": 4
+      }
+    },
+    {
+      "id": "vtx-happymodel-diamond",
+      "sku": "VTX-HAPPYMODEL-DIAMOND",
+      "name": "HappyModel Diamond VTX 5.8G (без управления, U.FL, 5V)",
+      "category": "vtx",
+      "weight_g": 2,
+      "price": 1490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/vtx-happymodel-diamond.jpg",
+      "model_url": null,
+      "attrs": {
+        "power_mw": [
+          25,
+          100,
+          200
+        ],
+        "band": "5.8G",
+        "control": null,
+        "antenna_connector": "UFL",
+        "vin_min": 3.3,
+        "vin_max": 5.5,
+        "current_a": 0.4,
+        "mount_pattern": null,
+        "cam_out_voltage": null,
+        "height_mm": 3
+      }
+    },
+    {
+      "id": "vtx-tbs-unify-pro32-nano",
+      "sku": "VTX-TBS-UNIFY-PRO32-NANO",
+      "name": "TBS Unify Pro32 Nano (SmartAudio, U.FL, 5V)",
+      "category": "vtx",
+      "weight_g": 1,
+      "price": 3990,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/vtx-tbs-unify-pro32-nano.jpg",
+      "model_url": null,
+      "attrs": {
+        "power_mw": [
+          25,
+          100,
+          200,
+          400
+        ],
+        "band": "5.8G",
+        "control": "SMARTAUDIO",
+        "antenna_connector": "UFL",
+        "vin_min": 4.5,
+        "vin_max": 5.5,
+        "current_a": 0.4,
+        "mount_pattern": "20x20",
+        "cam_out_voltage": null,
+        "height_mm": 4
+      }
+    },
+    {
+      "id": "ant-foxeer-lollipop4-mmcx",
+      "sku": "ANT-FOXEER-LOLLIPOP4-MMCX",
+      "name": "Foxeer Lollipop 4 (MMCX, RHCP)",
+      "category": "antenna",
+      "weight_g": 3.3,
+      "price": 890,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/ant-foxeer-lollipop4-mmcx.jpg",
+      "model_url": null,
+      "attrs": {
+        "gain_dbi": 2.6,
+        "type": "omni",
+        "polarization": "RHCP",
+        "connector": "MMCX"
+      }
+    },
+    {
+      "id": "ant-foxeer-lollipop4-ufl",
+      "sku": "ANT-FOXEER-LOLLIPOP4-UFL",
+      "name": "Foxeer Lollipop 4 (U.FL, RHCP)",
+      "category": "antenna",
+      "weight_g": 2.8,
+      "price": 890,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/ant-foxeer-lollipop4-ufl.jpg",
+      "model_url": null,
+      "attrs": {
+        "gain_dbi": 2.6,
+        "type": "omni",
+        "polarization": "RHCP",
+        "connector": "UFL"
+      }
+    },
+    {
+      "id": "ant-tbs-triumph-sma",
+      "sku": "ANT-TBS-TRIUMPH-SMA",
+      "name": "TBS Triumph Pro (SMA, RHCP)",
+      "category": "antenna",
+      "weight_g": 6,
+      "price": 1490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/ant-tbs-triumph-sma.jpg",
+      "model_url": null,
+      "attrs": {
+        "gain_dbi": 1.6,
+        "type": "omni",
+        "polarization": "RHCP",
+        "connector": "SMA"
+      }
+    },
+    {
+      "id": "ant-pagoda2-rpsma",
+      "sku": "ANT-PAGODA2-RPSMA",
+      "name": "Pagoda II (RP-SMA, LHCP)",
+      "category": "antenna",
+      "weight_g": 8,
+      "price": 690,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/ant-pagoda2-rpsma.jpg",
+      "model_url": null,
+      "attrs": {
+        "gain_dbi": 2.0,
+        "type": "pagoda",
+        "polarization": "LHCP",
+        "connector": "RPSMA"
+      }
+    },
+    {
+      "id": "bat-tattu-rline-6s-1300",
+      "sku": "BAT-TATTU-RLINE-6S-1300",
+      "name": "Tattu R-Line V5 6S 1300mAh 150C (XT60)",
+      "category": "battery",
+      "weight_g": 235,
+      "price": 5490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/bat-tattu-rline-6s-1300.jpg",
+      "model_url": null,
+      "attrs": {
+        "cells": 6,
+        "chemistry": "LiPo",
+        "capacity_mah": 1300,
+        "c_rate": 150,
+        "connector": "XT60"
+      }
+    },
+    {
+      "id": "bat-cnhl-6s-1100",
+      "sku": "BAT-CNHL-6S-1100",
+      "name": "CNHL Black Series 6S 1100mAh 100C (XT60)",
+      "category": "battery",
+      "weight_g": 190,
+      "price": 3290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/bat-cnhl-6s-1100.jpg",
+      "model_url": null,
+      "attrs": {
+        "cells": 6,
+        "chemistry": "LiPo",
+        "capacity_mah": 1100,
+        "c_rate": 100,
+        "connector": "XT60"
+      }
+    },
+    {
+      "id": "bat-gnb-4s-1550-130c",
+      "sku": "BAT-GNB-4S-1550-130C",
+      "name": "GNB 4S 1550mAh 130C (XT60)",
+      "category": "battery",
+      "weight_g": 190,
+      "price": 2890,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/bat-gnb-4s-1550-130c.jpg",
+      "model_url": null,
+      "attrs": {
+        "cells": 4,
+        "chemistry": "LiPo",
+        "capacity_mah": 1550,
+        "c_rate": 130,
+        "connector": "XT60"
+      }
+    },
+    {
+      "id": "bat-tattu-4s-1300-95c",
+      "sku": "BAT-TATTU-4S-1300-95C",
+      "name": "Tattu 4S 1300mAh 95C (XT60)",
+      "category": "battery",
+      "weight_g": 165,
+      "price": 2490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/bat-tattu-4s-1300-95c.jpg",
+      "model_url": null,
+      "attrs": {
+        "cells": 4,
+        "chemistry": "LiPo",
+        "capacity_mah": 1300,
+        "c_rate": 95,
+        "connector": "XT60"
+      }
+    },
+    {
+      "id": "bat-zeee-6s-3000-30c",
+      "sku": "BAT-ZEEE-6S-3000-30C",
+      "name": "Zeee 6S 3000mAh 30C (XT60) — «долголёт», низкий C",
+      "category": "battery",
+      "weight_g": 420,
+      "price": 3990,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/bat-zeee-6s-3000-30c.jpg",
+      "model_url": null,
+      "attrs": {
+        "cells": 6,
+        "chemistry": "LiPo",
+        "capacity_mah": 3000,
+        "c_rate": 30,
+        "connector": "XT60"
+      }
+    },
+    {
+      "id": "bat-tattu-6s-8000-15c",
+      "sku": "BAT-TATTU-6S-8000-15C",
+      "name": "Tattu 6S 8000mAh 15C (XT90) — грузовая",
+      "category": "battery",
+      "weight_g": 1050,
+      "price": 12900,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/bat-tattu-6s-8000-15c.jpg",
+      "model_url": null,
+      "attrs": {
+        "cells": 6,
+        "chemistry": "LiPo",
+        "capacity_mah": 8000,
+        "c_rate": 15,
+        "connector": "XT90"
+      }
+    },
+    {
+      "id": "bat-gnb-4s-650-xt30",
+      "sku": "BAT-GNB-4S-650-XT30",
+      "name": "GNB 4S 650mAh 80C (XT30) — для 3\"",
+      "category": "battery",
+      "weight_g": 75,
+      "price": 1290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/bat-gnb-4s-650-xt30.jpg",
+      "model_url": null,
+      "attrs": {
+        "cells": 4,
+        "chemistry": "LiHV",
+        "capacity_mah": 650,
+        "c_rate": 80,
+        "connector": "XT30"
+      }
+    },
+    {
+      "id": "bec-matek-micro-5v-12v",
+      "sku": "BEC-MATEK-MICRO-5V-12V",
+      "name": "Matek Micro BEC 6–36V → 5V/12V 1.5A",
+      "category": "pdb_bec",
+      "weight_g": 4,
+      "price": 690,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/bec-matek-micro-5v-12v.jpg",
+      "model_url": null,
+      "attrs": {
+        "vin_min": 6,
+        "vin_max": 36,
+        "outputs": [
+          {
+            "voltage": 5,
+            "current_a": 1.5
+          },
+          {
+            "voltage": 12,
+            "current_a": 1.5
+          }
+        ],
+        "filtered": true
+      }
+    },
+    {
+      "id": "pdb-matek-fchub-6s",
+      "sku": "PDB-MATEK-FCHUB-6S",
+      "name": "Matek FCHUB-6S PDB (5V/2A, 10V/1.5A)",
+      "category": "pdb_bec",
+      "weight_g": 8,
+      "price": 1290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/pdb-matek-fchub-6s.jpg",
+      "model_url": null,
+      "attrs": {
+        "vin_min": 6,
+        "vin_max": 36,
+        "outputs": [
+          {
+            "voltage": 5,
+            "current_a": 2
+          },
+          {
+            "voltage": 10,
+            "current_a": 1.5
+          }
+        ],
+        "filtered": true
+      }
+    },
+    {
+      "id": "bec-pololu-5v-3a",
+      "sku": "BEC-POLOLU-5V-3A",
+      "name": "Pololu 5V 3A step-down BEC",
+      "category": "pdb_bec",
+      "weight_g": 3,
+      "price": 990,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/bec-pololu-5v-3a.jpg",
+      "model_url": null,
+      "attrs": {
+        "vin_min": 6,
+        "vin_max": 36,
+        "outputs": [
+          {
+            "voltage": 5,
+            "current_a": 3
+          }
+        ],
+        "filtered": false
+      }
+    },
+    {
+      "id": "acc-standoff-m3-20",
+      "sku": "ACC-STANDOFF-M3-20",
+      "name": "Стойки M3x20 нейлон (комплект 4)",
+      "category": "accessory",
+      "weight_g": 4,
+      "price": 190,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/acc-standoff-m3-20.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "standoff",
+        "height_mm": 20,
+        "material": "nylon"
+      }
+    },
+    {
+      "id": "acc-standoff-m3-30",
+      "sku": "ACC-STANDOFF-M3-30",
+      "name": "Стойки M3x30 алюминий (комплект 4)",
+      "category": "accessory",
+      "weight_g": 8,
+      "price": 290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/acc-standoff-m3-30.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "standoff",
+        "height_mm": 30,
+        "material": "aluminium"
+      }
+    },
+    {
+      "id": "acc-standoff-m3-35",
+      "sku": "ACC-STANDOFF-M3-35",
+      "name": "Стойки M3x35 алюминий (комплект 4)",
+      "category": "accessory",
+      "weight_g": 9,
+      "price": 320,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/acc-standoff-m3-35.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "standoff",
+        "height_mm": 35,
+        "material": "aluminium"
+      }
+    },
+    {
+      "id": "acc-prop-guard-3",
+      "sku": "ACC-PROP-GUARD-3",
+      "name": "Защита пропеллеров 3\" (комплект)",
+      "category": "accessory",
+      "weight_g": 22,
+      "price": 890,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/acc-prop-guard-3.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "prop_guard",
+        "height_mm": 0
+      }
+    },
+    {
+      "id": "acc-gopro-mount-tpu",
+      "sku": "ACC-GOPRO-MOUNT-TPU",
+      "name": "Крепление GoPro TPU",
+      "category": "accessory",
+      "weight_g": 12,
+      "price": 490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/acc-gopro-mount-tpu.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "gopro_mount",
+        "height_mm": 0
+      }
+    },
+    {
+      "id": "acc-landing-gear-tpu",
+      "sku": "ACC-LANDING-GEAR-TPU",
+      "name": "Посадочные лыжи TPU (комплект)",
+      "category": "accessory",
+      "weight_g": 16,
+      "price": 390,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/acc-landing-gear-tpu.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "landing_gear",
+        "height_mm": 0
+      }
+    },
+    {
+      "id": "acc-dampers-m3",
+      "sku": "ACC-DAMPERS-M3",
+      "name": "Виброизоляционные демпферы M3 (комплект 8)",
+      "category": "accessory",
+      "weight_g": 2,
+      "price": 190,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/acc-dampers-m3.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "damper",
+        "height_mm": 0
+      }
+    },
+    {
+      "id": "acc-xt30-xt60-adapter",
+      "sku": "ACC-XT30-XT60-ADAPTER",
+      "name": "Переходник XT30 (мама) → XT60 (папа)",
+      "category": "accessory",
+      "weight_g": 5,
+      "price": 150,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/acc-xt30-xt60-adapter.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "adapter",
+        "height_mm": 0
+      }
+    },
+    {
+      "id": "addon-led-ws2812-8",
+      "sku": "ADDON-LED-WS2812-8",
+      "name": "LED-лента WS2812 8 диодов",
+      "category": "addon",
+      "weight_g": 3,
+      "price": 290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/addon-led-ws2812-8.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "led",
+        "voltage": 5,
+        "current_a": 0.5,
+        "uart_needed": 0,
+        "pwm_needed": 1
+      }
+    },
+    {
+      "id": "addon-led-highpower-strip",
+      "sku": "ADDON-LED-HIGHPOWER-STRIP",
+      "name": "LED-лента 5V 2.5A (высокая яркость, 30 диодов)",
+      "category": "addon",
+      "weight_g": 12,
+      "price": 790,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/addon-led-highpower-strip.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "led",
+        "voltage": 5,
+        "current_a": 2.5,
+        "uart_needed": 0,
+        "pwm_needed": 1
+      }
+    },
+    {
+      "id": "addon-buzzer-active",
+      "sku": "ADDON-BUZZER-ACTIVE",
+      "name": "Активный зумер 5V",
+      "category": "addon",
+      "weight_g": 2,
+      "price": 190,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/addon-buzzer-active.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "buzzer",
+        "voltage": 5,
+        "current_a": 0.03,
+        "uart_needed": 0,
+        "pwm_needed": 0
+      }
+    },
+    {
+      "id": "addon-vifly-finder2",
+      "sku": "ADDON-VIFLY-FINDER2",
+      "name": "ViFly Finder 2 (автономный зумер)",
+      "category": "addon",
+      "weight_g": 5,
+      "price": 1290,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/addon-vifly-finder2.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "buzzer",
+        "voltage": 5,
+        "current_a": 0.02,
+        "uart_needed": 0,
+        "pwm_needed": 0
+      }
+    },
+    {
+      "id": "addon-servo-dropper",
+      "sku": "ADDON-SERVO-DROPPER",
+      "name": "Серво-сброс груза (SG90 + механизм)",
+      "category": "addon",
+      "weight_g": 15,
+      "price": 690,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/addon-servo-dropper.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "dropper",
+        "voltage": 5,
+        "current_a": 0.5,
+        "uart_needed": 0,
+        "pwm_needed": 1
+      }
+    },
+    {
+      "id": "addon-cargo-box-600",
+      "sku": "ADDON-CARGO-BOX-600",
+      "name": "Грузовой контейнер 600 г (с грузом, для сброса)",
+      "category": "addon",
+      "weight_g": 600,
+      "price": 1490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/addon-cargo-box-600.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "dropper",
+        "voltage": 0,
+        "current_a": 0,
+        "uart_needed": 0,
+        "pwm_needed": 0
+      }
+    },
+    {
+      "id": "addon-cargo-box-1000",
+      "sku": "ADDON-CARGO-BOX-1000",
+      "name": "Грузовой контейнер 1000 г (с грузом, для сброса)",
+      "category": "addon",
+      "weight_g": 1000,
+      "price": 1890,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/addon-cargo-box-1000.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "dropper",
+        "voltage": 0,
+        "current_a": 0,
+        "uart_needed": 0,
+        "pwm_needed": 0
+      }
+    },
+    {
+      "id": "addon-lidar-tfmini-s",
+      "sku": "ADDON-LIDAR-TFMINI-S",
+      "name": "Benewake TFmini-S LiDAR (UART)",
+      "category": "addon",
+      "weight_g": 5,
+      "price": 3490,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/addon-lidar-tfmini-s.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "lidar",
+        "voltage": 5,
+        "current_a": 0.14,
+        "uart_needed": 1,
+        "pwm_needed": 0
+      }
+    },
+    {
+      "id": "addon-telemetry-bt",
+      "sku": "ADDON-TELEMETRY-BT",
+      "name": "SpeedyBee Bluetooth-телеметрия (UART)",
+      "category": "addon",
+      "weight_g": 4,
+      "price": 1190,
+      "currency": "RUB",
+      "stock": 10,
+      "image_url": "https://cricket097.github.io/drone-builder-demo/images/parts/addon-telemetry-bt.jpg",
+      "model_url": null,
+      "attrs": {
+        "type": "telemetry",
+        "voltage": 5,
+        "current_a": 0.1,
+        "uart_needed": 1,
+        "pwm_needed": 0
+      }
+    }
+  ],
+  "relations": [
+    {
+      "part_id_1": "frame-protek35",
+      "part_id_2": "motor-tmotor-f60-pro4-1750kv",
+      "relation_type": "INCOMPATIBLE",
+      "message": "Моторы 2207 не устанавливаются в дакты ProTek35 (диаметр колокола больше посадочного окна)"
+    },
+    {
+      "part_id_1": "frame-mark4-v3",
+      "part_id_2": "vtx-akk-fx3-ultimate",
+      "relation_type": "WARNING",
+      "message": "SMA-разъём VTX выступает за габарит рамы — используйте пигтейл SMA→U.FL или крепите VTX на верхней плате"
+    },
+    {
+      "part_id_1": "bat-gnb-4s-650-xt30",
+      "part_id_2": "esc-happymodel-25a-4in1",
+      "relation_type": "REQUIRES_ADAPTER",
+      "adapter_part_id": "acc-xt30-xt60-adapter",
+      "message": "ESC поставляется с пигтейлом XT60, батарея с XT30 — нужен переходник"
+    },
+    {
+      "part_id_1": "motor-tmotor-f60-pro4-1750kv",
+      "part_id_2": "prop-hq-5x4.3x3",
+      "relation_type": "COMPATIBLE",
+      "message": "Проверенная связка производителя"
+    }
+  ],
+  "rules": [
+    {
+      "id": "rule-cinewhoop-prop",
+      "name": "Cinewhoop — винты не более 3\"",
+      "enabled": true,
+      "priority": 10,
+      "when": {
+        "category": "frame",
+        "all": [
+          {
+            "field": "attrs.class",
+            "op": "eq",
+            "value": "cinewhoop"
+          }
+        ]
+      },
+      "then": {
+        "category": "propeller",
+        "field": "attrs.diameter_in",
+        "op": "lte",
+        "value": 3,
+        "severity": "error",
+        "message": "Для Cinewhoop-рамы допустим винт не более 3\""
+      }
+    },
+    {
+      "id": "rule-7inch-6s",
+      "name": "7\" — рекомендуется 6S",
+      "enabled": true,
+      "priority": 20,
+      "when": {
+        "category": "frame",
+        "all": [
+          {
+            "field": "attrs.class",
+            "op": "eq",
+            "value": "7inch"
+          }
+        ]
+      },
+      "then": {
+        "category": "battery",
+        "field": "attrs.cells",
+        "op": "gte",
+        "value": 6,
+        "severity": "warning",
+        "message": "Для 7\" рамы рекомендуется батарея 6S — на 4S не хватит запаса тяги"
+      }
+    },
+    {
+      "id": "rule-highkv-4s",
+      "name": "Моторы >2300KV — только до 4S",
+      "enabled": true,
+      "priority": 30,
+      "when": {
+        "category": "motor",
+        "all": [
+          {
+            "field": "attrs.kv",
+            "op": "gt",
+            "value": 2300
+          }
+        ]
+      },
+      "then": {
+        "category": "battery",
+        "field": "attrs.cells",
+        "op": "lte",
+        "value": 4,
+        "severity": "error",
+        "message": "Высокооборотные моторы (>2300KV) не рассчитаны на 6S: перегрев и срыв синхронизации"
+      }
+    }
+  ],
+  "settings": {
+    "strictness": {
+      "twr_min": 1.5,
+      "cog_max_mm": 5,
+      "cog_block": true,
+      "esc_margin": 1.25,
+      "battery_block": true,
+      "avg_current_factor": 0.12,
+      "strict_uart": true,
+      "strict_mount": true,
+      "prop_thrust_estimate_allowed": true
+    },
+    "theme": {
+      "primaryColor": "#1f6feb",
+      "secondaryColor": "#111827",
+      "font": "Inter"
+    }
+  }
+}
